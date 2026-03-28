@@ -8,6 +8,7 @@ int Motor_PWM_2=0;
 int Motor_PWM_3=0;
 int key_current=0;
 int key_last=0;
+int motor7_running = 0;
 //polabear2.0
 
 int main(void)//������
@@ -49,6 +50,14 @@ void Key_Handle(void)
             case 6:
                 Set_Motor1_RPM(-30);
                 break;
+            case 7:
+                motor7_running = 1;
+                Set_Motor1_RPM(150);
+                break;
+            case 8:
+                motor7_running = 0;
+                Set_Motor1_RPM(0);
+
         }
         key_last = key_current;
     }

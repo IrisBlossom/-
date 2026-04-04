@@ -17,7 +17,7 @@ void BSP_Init(){
 	Digital_Input_Init();
 	CH452_Init();
 	RC_Init();
-	//Steering_Init();	
+	Steering_Init();	
 }
 
 /************************************* �����ʼ��(test)*************************************/
@@ -39,8 +39,8 @@ void Steering_Init(){
  
  TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
  TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
- TIM_TimeBaseStructure.TIM_Period = 7199;
- TIM_TimeBaseStructure.TIM_Prescaler = 199;
+ TIM_TimeBaseStructure.TIM_Period = 20000-1;
+ TIM_TimeBaseStructure.TIM_Prescaler = 72-1;
  TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
  TIM_TimeBaseInit(TIM2,&TIM_TimeBaseStructure);
  

@@ -1,5 +1,6 @@
 #include "Bsp.h" 
 #include "Motor.h"
+#include "Servo_Motor.h"
 #include "CH452.h"
 #include "stm32f10x_tim.h"
 #include "timer.h"
@@ -54,10 +55,27 @@ void Key_Handle(void)
                 motor7_running = 1;
                 Set_Motor1_RPM(150);
                 break;
-            case 8:
+            case 0:
                 motor7_running = 0;
                 Set_Motor1_RPM(0);
-
+								break;
+						case 9:
+								Set_Servo_Angle(2, 45);
+								delay_s(2);
+								Set_Servo_Angle(2, 90);
+								delay_s(2);
+								Set_Servo_Angle(2, 135);
+								delay_s(2);
+								Set_Servo_Angle(2, 180);
+								delay_s(2);
+								Set_Servo_Angle(2, 135);
+								delay_s(2);
+								Set_Servo_Angle(2, 90);
+								delay_s(2);
+								Set_Servo_Angle(2, 45);
+								delay_s(2);
+								Set_Servo_Angle(2, 0);
+								break;
         }
         key_last = key_current;
     }

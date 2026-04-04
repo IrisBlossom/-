@@ -1,14 +1,14 @@
 #ifndef __MOTOR_H
 #define __MOTOR_H	
 
-#define Motor1_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_12)    // Ê¹ÄÜMotor1
-#define Motor1_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_12) // Ê§ÄÜMotor1
-#define Motor2_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_13)    // Ê¹ÄÜMotor2
-#define Motor2_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_13) // Ê§ÄÜMotor2
-#define Motor3_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_14)    // Ê¹ÄÜMotor3
-#define Motor3_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_14) // Ê§ÄÜMotor3
-#define Motor4_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_15)    // Ê¹ÄÜMotor4
-#define Motor4_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_15) // Ê§ÄÜMotor4
+#define Motor1_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_12)    // Ê¹ï¿½ï¿½Motor1
+#define Motor1_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_12) // Ê§ï¿½ï¿½Motor1
+#define Motor2_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_13)    // Ê¹ï¿½ï¿½Motor2
+#define Motor2_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_13) // Ê§ï¿½ï¿½Motor2
+#define Motor3_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_14)    // Ê¹ï¿½ï¿½Motor3
+#define Motor3_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_14) // Ê§ï¿½ï¿½Motor3
+#define Motor4_Enable() GPIO_SetBits(GPIOB,GPIO_Pin_15)    // Ê¹ï¿½ï¿½Motor4
+#define Motor4_Disable() GPIO_ResetBits(GPIOB,GPIO_Pin_15) // Ê§ï¿½ï¿½Motor4
 
 void Motor_Init(void);
 void Set_Motor1_RPM(int RPM);

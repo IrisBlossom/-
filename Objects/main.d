@@ -32,5 +32,6 @@
 .\objects\main.o: .\Lib\inc\misc.h
 .\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Hardware\Motor.h
+.\objects\main.o: .\Hardware\Servo_Motor.h
 .\objects\main.o: .\Hardware\CH452.h
 .\objects\main.o: .\Hardware\timer.h

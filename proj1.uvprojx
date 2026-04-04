@@ -570,6 +570,11 @@
               <FileType>1</FileType>
               <FilePath>.\Hardware\timer.c</FilePath>
             </File>
+            <File>
+              <FileName>Servo_Motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Servo_Motor.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -9,7 +9,7 @@ void Servo_Motor_Init(){
 void Set_Servo_Angle(uint8_t channel, uint16_t angle){
     if(angle > 180) angle = 180;
     
-    uint16_t pulse =(angle * 2000 / 180+500);
+    uint16_t pulse = 150 + (angle * 600 / 180);
     
     switch(channel){
         case 1:

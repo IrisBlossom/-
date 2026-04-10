@@ -35,3 +35,4 @@
 .\objects\main.o: .\Hardware\Servo_Motor.h
 .\objects\main.o: .\Hardware\CH452.h
 .\objects\main.o: .\Hardware\timer.h
+.\objects\main.o: .\Hardware\sensor.h

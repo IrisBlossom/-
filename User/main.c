@@ -4,12 +4,14 @@
 #include "CH452.h"
 #include "stm32f10x_tim.h"
 #include "timer.h"
+#include "sensor.h"
 int Motor_PWM_1=0;
 int Motor_PWM_2=0;
 int Motor_PWM_3=0;
 int key_current=0;
 int key_last=0;
 int motor7_running = 0;
+int n=0;
 //polabear2.0
 
 int main(void)//������
@@ -18,6 +20,7 @@ int main(void)//������
 		while(1)
 		{	
 		Key_Handle();
+		Sensor_Control();
 		}
 }
 void Key_Handle(void)
@@ -80,3 +83,9 @@ void Key_Handle(void)
         key_last = key_current;
     }
 	}
+void Sensor_Control(void)
+{
+	n=Get_Sensor1_Status()+Get_Sensor2_Status()+Get_Sensor3_Status()+Get_Sensor4_Status()+Get_Sensor5_Status();
+	CH452_SetDigit(2,n);
+	
+}

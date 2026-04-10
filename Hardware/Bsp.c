@@ -3,6 +3,7 @@
 #include "Motor.h"
 #include "CH452.h"
 #include "timer.h"
+#include "sensor.h"
 extern u32 duty;
 extern u16 freq;
 /********************************************* ����ʼ�� *********************************************/
@@ -15,6 +16,7 @@ void BSP_Init(){
 						   RCC_APB2Periph_AFIO  | RCC_APB2Periph_TIM1, ENABLE); //APB2����ʱ��ʹ�� 
 	Motor_Init();
 	Digital_Input_Init();
+	Sensor_Init();
 	CH452_Init();
 	RC_Init();
 	Steering_Init();	
@@ -39,8 +41,8 @@ void Steering_Init(){
  
  TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
  TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
- TIM_TimeBaseStructure.TIM_Period = 20000-1;
- TIM_TimeBaseStructure.TIM_Prescaler = 72-1;
+ TIM_TimeBaseStructure.TIM_Period = 7199;
+ TIM_TimeBaseStructure.TIM_Prescaler = 199;
  TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
  TIM_TimeBaseInit(TIM2,&TIM_TimeBaseStructure);
  

@@ -575,6 +575,11 @@
               <FileType>1</FileType>
               <FilePath>.\Hardware\Servo_Motor.c</FilePath>
             </File>
+            <File>
+              <FileName>sensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\sensor.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
